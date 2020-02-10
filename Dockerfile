@@ -6,8 +6,8 @@ WORKDIR /chico
 #ENV HTTP_PROXY http://200.198.51.238:8080/
 #ENV HTTPS_PROXY https://200.198.51.238:8080/
 COPY package.json . 
-RUN apt-get update && apt-get install nodejs -y 
-RUN apt-get install npm -y 
+#RUN apt-get update && apt-get install nodejs -y 
+#RUN apt-get install npm -y 
 RUN npm install 
 COPY index.js . 
 COPY erro.js . 

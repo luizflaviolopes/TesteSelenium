@@ -109,7 +109,6 @@ async function orquestrador() {
 
 }
 
-
 function logError(err) {
     console.log(err);
     driver.close();

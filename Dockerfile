@@ -1,5 +1,6 @@
 FROM selenium/node-chrome
 WORKDIR /chico
+USER root
 RUN echo "Acquire {" >> /etc/apt/apt.conf.d/proxy.conf
 RUN echo "HTTP::proxy \"http://200.198.51.238:8080\";" >> /etc/apt/apt.conf.d/proxy.conf
 RUN echo "HTTPS::proxy \"http://200.198.51.238:8080\";" >> /etc/apt/apt.conf.d/proxy.conf
